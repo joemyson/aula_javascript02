@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+
+        div#area{
+
+
+            font: mormal 20pt Arial;
+            background: deeppink;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entra()" onmouseover="sair()">
+interaja......
+
+    </div>
+
+
+    <script>
+
+
+        /// eventos DOM
+
+var a = window.document.getElementById('area')
+a.addEventListener('click',clicar)
+a.addEventListener('mouseenter',entra)//chamada da função entra
+a.addEventListener('mouseout',sair)
+
+// criação de funções
+
+function clicar(){//unção clicar
+
+
+a.innerText='clicou'
+a.style.background='black'
+}
+function entra(){// função entra
+
+a.innerText='entrou!'
+
+}
+
+
+function sair(){// função sair
+
+
+    a.innerText = 'saiu'
+    a.style.background ='green'
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
