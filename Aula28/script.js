@@ -57,7 +57,7 @@ function adcionar() {
     } else {
 
 
-        window.alert('vaor invalido ou ja encontrado na lista')
+        window.alert('valor invalido ou ja encontrado na lista')
     }
 
 
